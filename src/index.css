@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.button {
+  @apply py-2 px-8 rounded-3xl text-lg flex justify-center items-center hover:bg-white hover:text-black hover:duration-200;
+}
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+}
+.get__in_touch {
+  @apply flex gap-5 justify-start items-center rounded-lg bg-darkGray py-3 px-3 text-white text-lg w-full;
+}
+.about__image {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./asset/computer.jpg");
+  background-position: top;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.about__get__in_touch {
+  @apply flex gap-2 justify-start items-center  bg-darkGray  text-white text-lg;
+}
+.about__modal-container2 {
+  @apply py-14 lg:border-l border-dashed  flex flex-col gap-16 px-2 md:px-10 flex-1 lg:overflow-y-scroll no-scrollbar 2xl:text-xl;
+}
+.about__modal_base-container {
+  @apply flex flex-col lg:flex-row bg-darkGray rounded-lg w-[90%] lg:w-[750px] overflow-y-scroll no-scrollbar lg:h-[90%] mb-10;
+}
+.news__modal-container {
+  @apply flex flex-col bg-darkGray rounded-lg lg:w-[55%] px-6 py-14 md:p-12 w-[90%] overflow-y-scroll no-scrollbar lg:h-[90%] mb-10;
+}
