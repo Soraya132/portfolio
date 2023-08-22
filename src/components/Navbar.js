@@ -22,7 +22,9 @@ const Navbar = () => {
                     <div><img src={logo} alt='logo' /> </div>
                     <ul className='md:flex hidden capitalize  text-lg text-white items-center'>
                         {links.map((link, index) => {
-                            return <li key={index + link.name} className={`${pathname === `${link.path}` ? `text-${themeColor} text-lg font-[300]` : "text-white"} mx-3`}><Link to={link.path}>{link.name}</Link></li>
+                            return <li key={index + link.name}
+                                style={{ color: (pathname === link.path) ? `${themeColor}` : "white" }}
+                                className="mx-3"><Link to={link.path}>{link.name}</Link></li>
                         })}
                     </ul>
                     <div className='md:hidden' onClick={() => setShow(!show)}>
@@ -36,7 +38,11 @@ const Navbar = () => {
                 transition={{ duration: 0.6 }}
                 className='flex md:hidden items-end capitalize h-screen w-[40%] text-md text-white flex-col fixed top-20 z-40 right-0 bg-black py-10 px-5 '>
                 {links.map((link, index) => {
-                    return <li key={index + link.name} className={`${pathname === `${link.path}` ? `text-${themeColor}` : "text-white"} my-2`} onClick={() => setShow(!show)}><Link to={link.path}>{link.name}</Link></li>
+                    return <li
+                        key={index + link.name} className="my-2"
+                        onClick={() => setShow(!show)}><Link
+                            style={{ color: (pathname === link.path) ? `${themeColor}` : "white" }}
+                            to={link.path}>{link.name}</Link></li>
                 })}
             </motion.ul>
             <ThemeSetting theme={theme} setTheme={setTheme} />

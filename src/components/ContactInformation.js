@@ -1,7 +1,6 @@
 import { useTheme } from "../ThemeContext";
 import { ContactInfo } from "../data";
 
-
 const ContactInformation = () => {
     const { themeColor } = useTheme()
     return (
@@ -12,11 +11,11 @@ const ContactInformation = () => {
                         <div
                             className="about__get__in_touch border-b border-dashed pb-1"
                             key={index + item.info}>
-                            <div className={`text-${themeColor}`}>{item.icon}</div>
+                            <div style={{ color: `${themeColor}` }}>{item.icon}</div>
                             <a
                                 href={item.page}
-                                className={` hover:text-${themeColor}
-                                               text-lg lg:text-sm hover:duration-500 2xl:text-xl`}>
+                                className="text-lg lg:text-sm hover:duration-500 2xl:text-xl hover:text-gray"
+                            >
                                 {item.info}
                             </a>
                         </div>

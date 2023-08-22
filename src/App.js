@@ -26,7 +26,7 @@ function App() {
         paused={false}
         style={{ display: 'flex', position: "fixed", bottom: 0, right: 0, left: 0 }}
         options={{
-          height: 1,
+          height: 50,
           amplitude: 50,
           speed: 0.2,
           points: 7

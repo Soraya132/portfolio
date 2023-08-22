@@ -59,10 +59,10 @@ const NewsSwiper = ({ handleClick }) => {
                             />
                         </div>
                         <div className="px-3 py-4 flex flex-col justify-center">
-                            <h5 onClick={() => handleClick(news)} className={`text-white text-lg cursor-pointer text-left hover:text-${themeColor}  hover:duration-300`}>
+                            <h5 onClick={() => handleClick(news)} className={`text-white text-lg cursor-pointer text-left hover:text-gray  hover:duration-300`}>
                                 {news.name}
                             </h5>
-                            <p onClick={() => handleClick(news)} className={`text-slate-300 cursor-pointer text-left hover:text-${themeColor} hover:duration-300`}>
+                            <p onClick={() => handleClick(news)} className={`text-slate-300 cursor-pointer text-left hover:text-gray hover:duration-300`}>
                                 {news.detail}
                             </p>
                         </div>

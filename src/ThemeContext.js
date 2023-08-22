@@ -9,7 +9,6 @@ const getLocalStorage = () => {
     return JSON.parse(localStorage.getItem("theme"))
 }
 const primary = getLocalStorage()
-console.log(primary)
 const ThemeProvider = ({ children }) => {
 
     const [themeColor, setThemeColor] = useState(getLocalStorage() || "red")

@@ -18,7 +18,7 @@ const Home = () => {
             className='flex z-40 justify-center items-center flex-col h-72 gap-7 text-white text-center overflow-y-hidden'>
 
             <h1 className='text-5xl sm:text-6xl font-[500]'>soraya <span
-                className={`text-${themeColor} `}>haidary</span></h1>
+                style={{ color: `${themeColor}` }}>haidary</span></h1>
             <div className='text-2xl flex gap-2'>Creative<span>
                 <div>
                     <TypeAnimation
@@ -31,7 +31,7 @@ const Home = () => {
                 </div>
             </span>
             </div>
-            <button className={`button bg-${themeColor}`}><Link to="/contact">Get in Touch</Link></button>
+            <button className="button" style={{ backgroundColor: `${themeColor}` }}><Link to="/contact">Get in Touch</Link></button>
         </motion.div>
     )
 }

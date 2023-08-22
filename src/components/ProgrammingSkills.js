@@ -19,7 +19,8 @@ const ProgrammingSkills = () => {
                                 <p>{skill.percentage}</p>
                             </div>
                             <div className="w-full h-[3px] bg-slate-500">
-                                <div className={`h-full w-[${skill.percentage}] bg-${themeColor}`}></div>
+                                <div className="h-full "
+                                    style={{ background: `${themeColor}`, width: `${skill.percentage}` }}></div>
                             </div>
                         </div>
                     )

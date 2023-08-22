@@ -22,7 +22,9 @@ const ThemeSetting = ({ theme, setTheme }) => {
                     <ul className='grid grid-cols-4  gap-2  py-3'>
                         {colors.map((color, index) => {
                             return (
-                                <li key={index + color} className={`w-7 h-7 cursor-pointer rounded-full bg-${color} `} onClick={() => handleChange(color)}></li>
+                                <li key={index + color} className={`w-7 h-7 cursor-pointer rounded-full`}
+                                    style={{ backgroundColor: `${color}` }}
+                                    onClick={() => handleChange(color)}></li>
                             )
                         })}
                     </ul>

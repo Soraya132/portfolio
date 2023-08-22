@@ -39,7 +39,8 @@ const About = () => {
                     have acquired the skills and knowledge.
                 </p>
                 <button
-                    className={`button bg-${themeColor}  text-white`}
+                    className="button text-white"
+                    style={{ background: `${themeColor}` }}
                     onClick={() => setShowProfile(!showProfile)}>
                     learn more
                 </button>
@@ -57,7 +58,8 @@ const About = () => {
                                 <div>
                                     <h2 className="text-2xl 2xl:text-4xl  py-2 text-center">
 
-                                        soraya <span className={`text-${themeColor}`}>haidary</span>
+                                        soraya <span
+                                            style={{ color: `${themeColor}` }}>haidary</span>
                                     </h2>
                                     <h4 className="pb-2 text-center">creative developer</h4>
                                 </div>
@@ -66,7 +68,9 @@ const About = () => {
                                 <ContactInformation />
                             </div>
                             <div className="w-full my-1">
-                                <a href={downloadableLink} download className={`button w-full bg-${themeColor}`}>Download CV</a>
+                                <a href={downloadableLink} download
+                                    style={{ background: `${themeColor}` }}
+                                    className="button w-full ">Download CV</a>
                             </div>
                         </div>
                         <div className="about__modal-container2">

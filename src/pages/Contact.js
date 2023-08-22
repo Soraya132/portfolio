@@ -31,8 +31,9 @@ const Contact = () => {
                     {ContactInfo.map((item, index) => {
                         return (
                             <div className="get__in_touch" key={index + item.info}>
-                                <div className={`text-${themeColor}`}>{item.icon}</div>
-                                <a href={item.page} className={`hover:text-${themeColor} hover:duration-500`}>{item.info}</a>
+                                <div
+                                    style={{ color: `${themeColor}` }}>{item.icon}</div>
+                                <a href={item.page} className={`hover:text-gray hover:duration-500`}>{item.info}</a>
                             </div>
                         )
                     })}
@@ -44,7 +45,8 @@ const Contact = () => {
                     </div>
                     <textarea className="get__in_touch resize-none lg:h-32" placeholder="message" />
                     <div>
-                        <button className={`button bg-${themeColor} text-white w-[40%]`}>submit</button>
+                        <button
+                            className="button text-white w-[40%]" style={{ background: `${themeColor}` }}>submit</button>
                     </div>
                 </form>
             </section>

@@ -118,7 +118,7 @@ export const programmingSkills = [
 // about page language skills
 export const languageSkills = [
     { name: "English", percentage: "90" },
-    { name: "Pashot", percentage: "100" },
+    { name: "Pashto", percentage: "100" },
     { name: "Persian", percentage: "100" },
 ]
 // about page education timeline

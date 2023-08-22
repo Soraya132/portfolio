@@ -17,7 +17,8 @@ const Services = () => {
                 {skills.map((skill, index) => {
                     return (
                         <li key={index + skill} className="py-1 flex items-center gap-3">
-                            <span><BiSolidRightArrow className={`text-${themeColor}`} /></span><span>{skill}</span>
+                            <span><BiSolidRightArrow
+                                style={{ color: `${themeColor}` }} /></span><span>{skill}</span>
                         </li>
                     );
                 })}
